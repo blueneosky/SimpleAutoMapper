@@ -1,0 +1,28 @@
+﻿- type mapping on scalar
+ - cross member <-> prop
+ - accross inheritance
+- advance nullable scalar mapping (non nullable -> nullable)
+- scalar convertion
+- class 'primitive' (collections, dictionnary, ...)
+- check record (class) mapping
+- struct mapping (and record)
+- init prop capability with non naive recursive mode
+- readonly field
+- enum convertion (scalar -> enum, enum -> scalar, enum -> enum)
+- recursive mode 'naive' (no control) for non scalar prop/member
+ - take care of nullable/non nullable type
+- recursive mode 'stop' with only once mode
+- recursive mode 'reference' with reusage of mapped objects
+- custom type convertion
+- DI capability
+ - with multiple configuration point
+ - fluent configuration (simple as possible)
+- custom mapping (for specific prop/member of type)
+- typer mapping for interface (should not be a big deal)
+- compatible on generic source/dest types
+- ignore capability by configuration
+- configuration on null value from src
+- awaitable ? (not managed by expression)
+- optimization by replacing GetMapper to direct call of Mapper(ctxt, src) in Expressions
+- case insensitive option ?
+- option for debug info => DebugInfoGenerator.CreatePdbGenerator (with Compile) [?]
